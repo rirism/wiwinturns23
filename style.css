@@ -1,0 +1,120 @@
+/* Importing Cute Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;700&display=swap');
+
+/* Body Styles */
+body {
+    background: linear-gradient(135deg, #a8e6cf, #fff3b0); /* Mint green to yellowish gradient */
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Darker text for contrast */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.5em;
+    color: #004d40; /* Dark teal for hero heading */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    color: #004d40; /* Dark teal for hero subtext */
+}
+
+/* Grid for Instax Frames */
+.instax-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns max */
+    gap: 20px; /* Space between frames */
+    margin-top: 40px;
+    justify-items: center; /* Center the items in the grid */
+}
+
+/* Instax Frame Styles (Equal Height) */
+.instax-frame {
+    background-color: #ffffff; /* White frame */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(255, 206, 135, 0.2); /* Soft yellowish shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+/* Image inside Instax Frame */
+.instax-photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Caption below the image */
+.instax-caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333; /* Dark gray text */
+    font-family: 'Fredoka One', cursive;
+    padding: 10px 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wish Card Styling */
+.wish-card {
+    background-color: #ffffff; /* White card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 206, 135, 0.2); /* Soft yellowish shadow */
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wish-text {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2em;
+    color: #333; /* Dark gray text */
+    line-height: 1.5;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .instax-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .instax-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .wish-card {
+        max-width: 90%; /* Reduce width of wish card on mobile */
+    }
+}

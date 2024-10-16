@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Happy Birthday Win!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body>
+    <main class="container">
+        <div class="hero">
+            <h1>Happy Birthday Twinca</h1>
+            <p>Temanku dalam melakukan segala-gala hal!</p>
+        </div>
+
+        <!-- Instax Frame Grid -->
+        <div class="instax-grid">
+            <div class="instax-frame">
+                <img src="assets/img1.jpg" alt="Birthday photo 1" class="instax-photo" height="50px">
+                <div class="instax-caption">Mint Green Gurl</div>
+            </div>
+            <div class="instax-frame">
+                <img src="assets/img2.jpeg" alt="Birthday photo 2" class="instax-photo" height="50px">
+                <div class="instax-caption">Pelayanan Buddy</div>
+            </div>
+            <div class="instax-frame">
+                <img src="assets/img3.jpg" alt="Birthday photo 3" class="instax-photo" height="50px">
+                <div class="instax-caption">Hairclip Gurl</div>
+            </div>
+            <div class="instax-frame">
+                <img src="assets/img4.jpg" alt="Birthday photo 4" class="instax-photo" height="50px">
+                <div class="instax-caption">High School Bestie</div>
+            </div>
+            <div class="instax-frame">
+                <img src="assets/img5.jpg" alt="Birthday photo 5" class="instax-photo" height="50px">
+                <div class="instax-caption">Gym Gurl</div>
+            </div>
+            <div class="instax-frame">
+                <img src="assets/img6.jpeg" alt="Birthday photo 6" class="instax-photo" height="50px">
+                <div class="instax-caption">Grocerie Bestie</div>
+            </div>
+        </div>
+
+        <!-- Wish Card Section -->
+        <div class="wish-card">
+            <p class="wish-text">
+                Dear Wiwin,<br><br>
+                Wishing you a day filled with love, laughter, and countless unforgettable memories! 🎉 You are such an amazing person and deserve the world. May this special day bring you all the joy and happiness you deserve. Here’s to another year of fabulous adventures, unforgettable moments, and reaching for the stars! 🌟 May all your dreams come true, body goalsnya jadi, menjadi trophy woman, menemukan jodoh yang seimbang, dan selalu tetap setia di jalan Tuhan Yesus!<br><br>
+                Have the best 23th birthday ever! 🥳🎁🎂
+            </p>
+        </div>
+
+        <!-- SoundCloud Embed -->
+        <iframe id="soundcloudPlayer" width="0" height="0" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/786047401&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
+
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/happy-birthday-official" target="_blank" style="color: #cccccc; text-decoration: none;">
+            </a>
+        </div>
+    </main>
+
+    <!-- JavaScript to trigger autoplay -->
+    <script>
+        // Ensure iframe reload to attempt autoplay
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const soundcloudIframe = document.getElementById('soundcloudPlayer');
+            const src = soundcloudIframe.getAttribute('src');
+            soundcloudIframe.setAttribute('src', src); // Reload iframe to try and trigger autoplay
+
+            // Attempt to reload the iframe after a short delay for autoplay
+            setTimeout(function() {
+                soundcloudIframe.setAttribute('src', src);
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
